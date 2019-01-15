@@ -1,0 +1,31 @@
+After pagination:
+
+loadtest -n 1000 -k 'http://0.0.0.0:8000/data?page=3'
+[Tue Jan 15 2019 15:50:55 GMT-0800 (Pacific Standard Time)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Tue Jan 15 2019 15:51:00 GMT-0800 (Pacific Standard Time)] INFO Requests: 192 (19%), requests per second: 38, mean latency: 25.8 ms
+[Tue Jan 15 2019 15:51:05 GMT-0800 (Pacific Standard Time)] INFO Requests: 384 (38%), requests per second: 38, mean latency: 26.1 ms
+[Tue Jan 15 2019 15:51:10 GMT-0800 (Pacific Standard Time)] INFO Requests: 576 (58%), requests per second: 38, mean latency: 25.9 ms
+[Tue Jan 15 2019 15:51:15 GMT-0800 (Pacific Standard Time)] INFO Requests: 770 (77%), requests per second: 39, mean latency: 25.8 ms
+[Tue Jan 15 2019 15:51:20 GMT-0800 (Pacific Standard Time)] INFO Requests: 964 (96%), requests per second: 39, mean latency: 25.6 ms
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO Target URL:          http://0.0.0.0:8000/data?page=3
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO Max requests:        1000
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO Concurrency level:   1
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO Agent:               keepalive
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO Completed requests:  1000
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO Total errors:        0
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO Total time:          25.948445738 s
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO Requests per second: 39
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO Mean latency:        25.9 ms
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO Percentage of the requests served within a certain time
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO   50%      21 ms
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO   90%      51 ms
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO   95%      53 ms
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO   99%      55 ms
+[Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO  100%      58 ms (longest request)
+
+After caching:
+
+not done
