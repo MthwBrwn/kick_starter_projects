@@ -3,5 +3,26 @@
 {% block title %}Project Details{% endblock title %}
 
 {% block content %}
-  <h2>{{ project.name }} ({{ project.state }})</h2>
+<div class="project_detail">
+  <h2>
+  {{ project.name }} ({{ project.state }})
+  </h2>
+
+  <ul>
+    <li>Category: {{project.category}}</li>
+    <li>Main category: {{project.main_category}}</li>
+    <li>Currency type: {{project.currency}}</li>
+    <li>Deadline: {{project.deadline}}</li>
+    <li>Goal: {{project.goal}}</li>
+    <li>Date Launched: {{project.launched}}</li>
+    <li>Amount Pledged: {{project.pledged}}</li>
+    <li>Funding state: {{project.state}}</li>
+    <li>Number of Backers: {{project.backers}}</li>
+    <li>Country: {{project.country}}</li>
+    <li>Pledge in dollars: {{project.usd_pledged}}</li>
+    <li>Pledge in dollars: {{project.usd_pledged_real}}</li>
+    <li>Goal: {{project.usd_goal_real}}</li>
+  </ul>
+
+</div>
 {% endblock content %}
