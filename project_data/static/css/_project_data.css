@@ -1,4 +1,6 @@
-ul {
+main ul {
   font-size: 1.1em; }
-  ul li a {
-    color: #020466; }
+
+.page_holder {
+  margin: 1em auto;
+  text-align: center; }

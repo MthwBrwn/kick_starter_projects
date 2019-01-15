@@ -15,5 +15,17 @@
     <li><a href="{% url 'project_detail' pk=project.id %}">{{ project.name }} ({{ project.state }})</a></li>
     {% endfor %}
   </ul>
+
+  <div class="page_holder">
+    <p>
+    {% if projects.has_previous %}
+      <a href="?page={{ projects.previous_page_number }}">Previous</a>
+    {% endif %}
+    Page {{ projects.number }}
+    {% if projects.has_next %}
+      <a href="?page={{ projects.next_page_number }}">Next</a>
+    {% endif %}
+    </p>
+  </div>
 </div>
 {% endblock %}
