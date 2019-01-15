@@ -3,9 +3,11 @@
 {% block title %}Project List{% endblock %}
 
 {% block content %}
+<div class="project_list">
   <ul>
     {% for project in projects %}
-      <li><a href="{% url 'project_detail' pk=project.id %}">{{ project.name }} ({{ project.state }})</a></li>
+    <li><a href="{% url 'project_detail' pk=project.id %}">{{ project.name }} ({{ project.state }})</a></li>
     {% endfor %}
   </ul>
+</div>
 {% endblock %}

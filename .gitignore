@@ -121,9 +121,6 @@ venv.bak/
 *.pem
 .pem
 
-# Bash Scripts
-*.sh
-.sh
 
 # json files
 sg_id.json
