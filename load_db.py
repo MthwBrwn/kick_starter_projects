@@ -23,10 +23,6 @@ df['usd_pledged'] = df['usd_pledged'].fillna(0.0)
 df['usd_pledged_real'] = df['usd_pledged_real'].fillna(0.0)
 df['usd_goal_real'] = df['usd_goal_real'].fillna(0.0)
 
-
-# df_new = df.dropna(how='any')
-
-
 db_protocol = 'postgresql'
 db_host = os.environ.get('DB_HOST')
 db_user = os.environ.get('DB_USER')

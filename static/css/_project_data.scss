@@ -1,9 +1,14 @@
 @import "../../../kickstarter_projects/static/css/_variables.scss";
 
-ul {
+main ul {
     font-size: 1.1em;
 
     li a {
         color: $color-primary;
     }
+}
+
+.page_holder {
+    margin: 1em auto;
+    text-align: center;
 }
