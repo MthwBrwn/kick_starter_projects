@@ -1,0 +1,11 @@
+{% extends 'base/base.html' %}
+
+{% block title %}Project List{% endblock %}
+
+{% block content %}
+  <ul>
+    {% for project in projects %}
+      <li><a href="{% url 'project_detail' pk=project.id %}">{{ project.name }} ({{ project.state }})</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
