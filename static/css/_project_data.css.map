@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "_project_data.css",
+	"sources": [
+		"_project_data.scss",
+		"../../../kickstarter_projects/static/css/_variables.scss"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,EAAE,CAAC;EACC,SAAS,EAAE,KAAK,GAKnB;EAND,AAGI,EAHF,CAGE,EAAE,CAAC,CAAC,CAAC;IACD,KAAK,ECLG,OAAO,GDMlB"
+}

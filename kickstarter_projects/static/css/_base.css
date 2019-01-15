@@ -1,0 +1,101 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Baloo|Nunito");
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #f7f7f7;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px; }
+
+header,
+main {
+  max-width: 960px;
+  margin: 0 auto; }
+  @media (max-width: 959px) {
+    header,
+    main {
+      margin: 1em; } }
+
+/* text */
+h6 {
+  font-size: 1.125em;
+  font-family: 'Baloo', cursive; }
+  @media (max-width: 959px) {
+    h6 {
+      font-size: 0.875em; } }
+
+h5 {
+  font-size: 1.28571em;
+  font-family: 'Baloo', cursive; }
+  @media (max-width: 959px) {
+    h5 {
+      font-size: 1em; } }
+
+h4 {
+  font-size: 1.5em;
+  font-family: 'Baloo', cursive; }
+  @media (max-width: 959px) {
+    h4 {
+      font-size: 1.16667em; } }
+
+h3 {
+  font-size: 1.8em;
+  font-family: 'Baloo', cursive; }
+  @media (max-width: 959px) {
+    h3 {
+      font-size: 1.4em; } }
+
+h2 {
+  font-size: 2.25em;
+  font-family: 'Baloo', cursive; }
+  @media (max-width: 959px) {
+    h2 {
+      font-size: 1.75em; } }
+
+h1 {
+  font-size: 3em;
+  font-family: 'Baloo', cursive; }
+  @media (max-width: 959px) {
+    h1 {
+      font-size: 2.33333em; } }
+
+h1 {
+  background-color: #020466;
+  color: #f7f7f7;
+  margin: .5em 0;
+  padding: .5em 0;
+  text-align: center; }
+
+h2 {
+  color: #020466; }
+
+h3 {
+  color: #e03a21; }
+
+a,
+a:hover,
+a:active {
+  text-decoration: none; }
+
+a {
+  color: #e03a21; }
+  a:hover {
+    color: #020466; }
+
+li {
+  list-style: circle inside; }
+
+/* nav */
+nav {
+  margin: 1em 0; }
+  nav ul {
+    text-align: center; }
+  nav li {
+    display: inline-block;
+    padding: 0 1em; }
+
+/* main */
+main {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1em; }

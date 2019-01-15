@@ -2,7 +2,13 @@
 
 {% block title %}Project List{% endblock %}
 
+{% load sass_tags %}
+{% block scss_links %}
+  <link href="{% sass_src 'css/_project_data.scss' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
 {% block content %}
+<h2>List of Projects</h2>
 <div class="project_list">
   <ul>
     {% for project in projects %}

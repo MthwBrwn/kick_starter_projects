@@ -1,0 +1,9 @@
+@import "../../../kickstarter_projects/static/css/_variables.scss";
+
+ul {
+    font-size: 1.1em;
+
+    li a {
+        color: $color-primary;
+    }
+}

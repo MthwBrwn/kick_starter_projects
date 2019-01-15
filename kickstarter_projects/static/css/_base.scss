@@ -1,0 +1,90 @@
+@import "reset.css";
+@import "_variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Baloo|Nunito');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+header,
+main {
+    max-width: 960px;
+    margin: 0 auto;
+
+    @media (max-width: 959px) {
+        margin: 1em;
+    }
+}
+
+/* text */
+
+@for $i from 6 through 1 {
+    h#{$i} {
+        font-size: 9/($i + 2) * 1em;
+        font-family: 'Baloo', cursive;
+
+        @media (max-width: 959px) {
+            font-size: 7/($i + 2) * 1em;
+        }
+    }
+}
+
+h1 {
+    background-color: $color-primary;
+    color: $color-white;
+    margin: .5em 0;
+    padding: .5em 0;
+    text-align: center;
+}
+
+h2 {
+    color: $color-primary;
+}
+
+h3 {
+    color: $color-secondary;
+}
+
+a,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+a {
+    color: $color-secondary;
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+li {
+    list-style: circle inside;
+}
+
+/* nav */
+
+nav {
+    margin: 1em 0;
+    ul {
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0 1em;
+    }
+}
+
+/* main */
+
+main {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 1em;
+}
