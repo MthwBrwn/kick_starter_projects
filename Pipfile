@@ -13,6 +13,9 @@ psycopg2 = "*"
 jupyter = "*"
 pandas = "*"
 numpy = "*"
+libsass = "*"
+django-compressor = "*"
+django-sass-processor = "*"
 
 [requires]
 python_version = "3.6"
