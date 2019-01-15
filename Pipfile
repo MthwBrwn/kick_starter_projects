@@ -9,6 +9,9 @@ verify_ssl = true
 django = "*"
 docker-compose = "*"
 psycopg2 = "*"
+jupyter = "*"
+pandas = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.6"
