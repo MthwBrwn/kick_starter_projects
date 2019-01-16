@@ -25,4 +25,5 @@ This loads kickstarter data from 2018 and puts it on a site where you can view d
 
 ## Updates
 
+- 1-15-19: pagination of project list page, caching of list
 - 1-14-19: initial django setup, basic routes, load db with csv data, sass

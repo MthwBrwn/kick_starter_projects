@@ -137,3 +137,20 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'sass_processor.finders.CssFinder',
 ]
+
+
+# Caching
+
+REDIS_URL = 'redis://{}:6379/1'.format(os.getenv('REDIS_HOST'))
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': REDIS_URL,
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient'
+        },
+        'KEY_PREFIX': 'example'
+    }
+}
+
+CACHE_TTL = 60 * 1
