@@ -4,7 +4,7 @@ import os
 
 
 csv_data = pd.read_csv('./assets/ks-projects-201801.csv')
-df = pd.DataFrame(csv_data).head(5)
+df = pd.DataFrame(csv_data).head(10000)
 
 del df['ID']
 df['usd_pledged'] = df['usd pledged']
