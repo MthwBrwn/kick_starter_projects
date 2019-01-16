@@ -20,7 +20,7 @@
       {% if user.is_superuser %}
         <li><a href="{% url 'admin:index' %}">Admin</a></li>
       {% endif %}
-      <li><a href="{% url 'project_list' %}">Projects</a></li>
+      <li><a href="{% url 'project_list' %}?page=1">Projects</a></li>
     </ul>
   </nav>
   </header>
