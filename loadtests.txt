@@ -26,6 +26,31 @@ loadtest -n 1000 -k 'http://0.0.0.0:8000/data?page=3'
 [Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO   99%      55 ms
 [Tue Jan 15 2019 15:51:21 GMT-0800 (Pacific Standard Time)] INFO  100%      58 ms (longest request)
 
+loadtest -n 1000 -c 100 -k 'http://127.0.0.1:8000/data?page=3'
+[Tue Jan 15 2019 17:17:38 GMT-0800 (Pacific Standard Time)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO Target URL:          http://127.0.0.1:8000/data?page=3
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO Max requests:        1000
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO Concurrency level:   100
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO Agent:               keepalive
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO Completed requests:  1000
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO Total errors:        2
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO Total time:          2.0667028970000003 s
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO Requests per second: 484
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO Mean latency:        129.8 ms
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO Percentage of the requests served within a certain time
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO   50%      48 ms
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO   90%      178 ms
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO   95%      1097 ms
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO   99%      1935 ms
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO  100%      1978 ms (longest request)
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO  100%      1978 ms (longest request)
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO
+[Tue Jan 15 2019 17:17:40 GMT-0800 (Pacific Standard Time)] INFO    -1:   2 errors
+
 After caching:
 
 loadtest -n 1000 -k 'http://127.0.0.1:8000/data?page=3'
@@ -53,3 +78,24 @@ loadtest -n 1000 -k 'http://127.0.0.1:8000/data?page=3'
 [Tue Jan 15 2019 17:10:24 GMT-0800 (Pacific Standard Time)] INFO   95%      51 ms
 [Tue Jan 15 2019 17:10:24 GMT-0800 (Pacific Standard Time)] INFO   99%      56 ms
 [Tue Jan 15 2019 17:10:24 GMT-0800 (Pacific Standard Time)] INFO  100%      58 ms (longest request)
+
+loadtest -n 1000 -c 100 -k 'http://127.0.0.1:8000/data?page=3'
+[Tue Jan 15 2019 17:16:01 GMT-0800 (Pacific Standard Time)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO Target URL:          http://127.0.0.1:8000/data?page=3
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO Max requests:        1000
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO Concurrency level:   100
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO Agent:               keepalive
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO Completed requests:  1000
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO Total errors:        0
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO Total time:          2.095162403 s
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO Requests per second: 477
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO Mean latency:        59.1 ms
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO Percentage of the requests served within a certain time
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO   50%      44 ms
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO   90%      100 ms
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO   95%      125 ms
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO   99%      1115 ms
+[Tue Jan 15 2019 17:16:03 GMT-0800 (Pacific Standard Time)] INFO  100%      1322 ms (longest request)
