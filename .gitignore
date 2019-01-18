@@ -126,3 +126,8 @@ venv.bak/
 sg_id.json
 rdsinstance_completed.json
 ec2_instance_completed.json
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

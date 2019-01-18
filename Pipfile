@@ -18,6 +18,7 @@ django-compressor = "*"
 django-sass-processor = "*"
 django-redis = "*"
 gunicorn = "*"
+awsebcli = "*"
 
 [requires]
 python_version = "3.6"

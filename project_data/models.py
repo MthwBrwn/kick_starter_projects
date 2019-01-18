@@ -1,5 +1,10 @@
 from django.db import models
 
+
+class Project(models.Model):
+    pass
+
+
 class Project(models.Model):
     """ model for a kickstarter project """
     name = models.CharField(max_length=1028)
